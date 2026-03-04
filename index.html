@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/PadFanCalculator/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <title>Pad &amp; Fan Greenhouse Cooling Calculator | Geneina Solutions</title>
+    <meta name="description" content="Free pad and fan greenhouse cooling calculator for MENA region. Calculate achievable indoor temperatures, required airflow, equipment sizing, and crop suitability for evaporative cooling systems." />
+    <meta property="og:title" content="Pad & Fan Greenhouse Cooling Calculator | Geneina Solutions" />
+    <meta property="og:description" content="Free engineering tool to size pad and fan evaporative cooling systems for greenhouses in the Middle East and North Africa." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/PadFanCalculator/og-image.png" />
+    <link rel="alternate" hreflang="en" href="/PadFanCalculator/#/en" />
+    <link rel="alternate" hreflang="ar" href="/PadFanCalculator/#/ar" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does pad and fan evaporative cooling work in greenhouses?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pad and fan cooling draws outside air through wet cellulose pads. As air passes through the pads, water evaporates and absorbs heat, reducing the air temperature. Fans on the opposite wall pull this cooled air through the greenhouse. The maximum cooling achievable is limited by the wet bulb temperature of the outside air."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the wet bulb temperature and why does it matter for greenhouse cooling?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wet bulb temperature is the lowest temperature achievable through evaporative cooling alone. It depends on both dry bulb temperature and relative humidity. In dry MENA climates (5-15% RH), wet bulb can be 15-20°C below ambient, making pad and fan highly effective. In humid conditions, cooling potential is much lower."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What pad thickness should I use for my greenhouse in the Middle East?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most MENA greenhouses, 10cm (4-inch) pads are recommended as the best balance of cost and performance (83-87% efficiency). For extreme heat above 45°C, 15cm (6-inch) pads at 90-93% efficiency are required. 5cm pads are not recommended above 42°C external temperature."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I calculate the required airflow for pad and fan cooling?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Required airflow follows ASABE standards: 0.05 m³/s per m² of floor area for cool-season crops (lettuce, herbs) and 0.08 m³/s per m² for warm-season crops (tomato, cucumber, pepper). The pad face velocity should be maintained between 1.0-1.25 m/s for optimal cooling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can pad and fan cooling keep a greenhouse below 30°C in Saudi Arabia or UAE?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on external conditions. At 48°C and 10% RH (common in Riyadh summer), a well-designed 15cm pad system can achieve approximately 28-30°C at the cool end. However, temperature rises along the greenhouse length due to solar heat gain. Proper sizing, shade screens, and greenhouse orientation are critical for MENA success."
+          }
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

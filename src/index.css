@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-geneina-50: #f0fdf4;
+  --color-geneina-100: #dcfce7;
+  --color-geneina-200: #bbf7d0;
+  --color-geneina-300: #86efac;
+  --color-geneina-400: #4ade80;
+  --color-geneina-500: #22c55e;
+  --color-geneina-600: #16a34a;
+  --color-geneina-700: #15803d;
+  --color-geneina-800: #166534;
+  --color-geneina-900: #14532d;
+
+  --color-cool: #3b82f6;
+  --color-warm: #f59e0b;
+  --color-hot: #ef4444;
+  --color-achievable: #22c55e;
+  --color-marginal: #f59e0b;
+  --color-not-achievable: #ef4444;
+
+  --font-sans: 'Inter', 'Segoe UI', 'Noto Sans Arabic', system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+
+  [dir="rtl"] {
+    font-family: 'Noto Sans Arabic', 'Segoe UI', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .gradient-bar {
+    background: linear-gradient(to right, var(--color-cool), var(--color-warm), var(--color-hot));
+  }
+
+  [dir="rtl"] .gradient-bar {
+    background: linear-gradient(to left, var(--color-cool), var(--color-warm), var(--color-hot));
+  }
+
+  [dir="rtl"] .rtl-flip {
+    transform: scaleX(-1);
+  }
+}
+
+@layer utilities {
+  .animate-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}

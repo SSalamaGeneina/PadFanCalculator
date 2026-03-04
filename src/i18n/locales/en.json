@@ -1,0 +1,247 @@
+{
+  "app": {
+    "title": "Pad & Fan Greenhouse Cooling Calculator",
+    "subtitle": "Free engineering tool for MENA greenhouse cooling design",
+    "brand": "Geneina Solutions",
+    "poweredBy": "Powered by Geneina Solutions"
+  },
+  "lang": {
+    "en": "English",
+    "ar": "العربية",
+    "toggle": "العربية"
+  },
+  "steps": {
+    "step1": "Greenhouse",
+    "step2": "Climate & Crop",
+    "step3": "Your Results"
+  },
+  "nav": {
+    "next": "Next",
+    "back": "Back",
+    "calculate": "Calculate Results"
+  },
+  "step1": {
+    "title": "Greenhouse Configuration",
+    "description": "Define the physical structure of your greenhouse",
+    "greenhouseType": "Greenhouse Type",
+    "greenhouseTypeOptions": {
+      "single-span": "Single Span",
+      "multi-span": "Multi-Span",
+      "tunnel-polytunnel": "Tunnel / Polytunnel"
+    },
+    "width": "Width",
+    "widthUnit": "m",
+    "widthTooltip": "The total width of the greenhouse structure measured from wall to wall",
+    "length": "Length",
+    "lengthUnit": "m",
+    "lengthTooltip": "The total length of the greenhouse structure",
+    "ridgeHeight": "Ridge Height",
+    "ridgeHeightUnit": "m",
+    "ridgeHeightTooltip": "The highest point of the greenhouse roof from ground level",
+    "eaveHeight": "Eave Height",
+    "eaveHeightUnit": "m",
+    "eaveHeightTooltip": "The height where the roof meets the side wall — the minimum clear height inside",
+    "canopyHeight": "Crop Canopy Height",
+    "canopyHeightUnit": "m",
+    "canopyHeightTooltip": "The expected maximum height of the crop canopy. Determines the volume where cooling must be effective",
+    "padWall": "Pad Placement Wall",
+    "padWallOptions": {
+      "width": "On the width wall (short side)",
+      "length": "On the length wall (long side)"
+    },
+    "padWallTooltip": "Which wall the cooling pads are installed on. This defines the direction of airflow through the greenhouse",
+    "padHeight": "Pad Height",
+    "padHeightUnit": "m",
+    "padHeightTooltip": "The vertical height of the installed cooling pads. Cannot exceed the eave height",
+    "padThickness": "Pad Thickness",
+    "padThicknessUnit": "cm",
+    "padThicknessOptions": {
+      "5": "5 cm (light duty)",
+      "10": "10 cm (standard)",
+      "15": "15 cm (high performance)"
+    },
+    "padThicknessTooltip": "Thicker pads provide higher cooling efficiency. 10 cm is standard for most MENA greenhouses; 15 cm recommended above 45°C",
+    "coverMaterial": "Roof / Cover Material",
+    "coverMaterialOptions": {
+      "single-poly": "Single Polyethylene",
+      "double-poly": "Double Polyethylene (air-inflated)",
+      "glass": "Glass (clear)",
+      "polycarbonate": "Polycarbonate (8–16mm)"
+    },
+    "coverMaterialTooltip": "The covering material affects how much solar heat enters the greenhouse. Single poly lets in the most heat; polycarbonate the least",
+    "shadeScreen": "Shade Screen",
+    "shadeScreenOptions": {
+      "none": "None",
+      "internal": "Internal shade screen",
+      "external": "External shade screen"
+    },
+    "shadeScreenTooltip": "Shade screens reduce solar heat load. External screens are more effective but more expensive",
+    "shadePercent": "Shade Percentage",
+    "shadePercentUnit": "%",
+    "shadePercentTooltip": "The percentage of solar radiation blocked by the shade screen (typically 30–70%)",
+    "orientation": "Greenhouse Orientation",
+    "orientationOptions": {
+      "ns": "North-South Ridge",
+      "ew": "East-West Ridge"
+    },
+    "orientationTooltip": "N-S orientation distributes solar radiation more evenly; E-W orientation may increase south-wall heat gain in MENA",
+    "ventType": "Existing Roof Vents",
+    "ventTypeOptions": {
+      "none": "None",
+      "ridge": "Ridge vents",
+      "side": "Side vents",
+      "both": "Both (ridge + side)"
+    },
+    "ventTypeTooltip": "Existing vents reduce static pressure and improve fan efficiency when open during cooling",
+    "ventArea": "Vent Opening Area",
+    "ventAreaUnit": "m²",
+    "ventAreaTooltip": "Total open area of all vents combined"
+  },
+  "step2": {
+    "title": "Climate & Crop Inputs",
+    "description": "Define outdoor conditions and your target crop",
+    "locationSection": "Location & Weather",
+    "cropSection": "Crop Selection",
+    "location": "Location",
+    "locationPlaceholder": "Search for a city...",
+    "locationTooltip": "Select your location to auto-fill weather data. All values can be manually adjusted",
+    "fetchingWeather": "Fetching weather data...",
+    "weatherLoaded": "Weather data loaded for {{location}}",
+    "peakSummer": "Use peak summer conditions",
+    "peakSummerTooltip": "Override with the hottest recorded conditions from last summer for this location — recommended for system design",
+    "externalTemp": "External Temperature",
+    "externalTempUnit": "°C",
+    "externalTempTooltip": "The outdoor dry-bulb temperature. This is the starting point for all cooling calculations",
+    "externalRH": "External Relative Humidity",
+    "externalRHUnit": "%",
+    "externalRHTooltip": "Outdoor relative humidity. Lower humidity = more evaporative cooling potential. MENA summers are typically 5–20%",
+    "solarRadiation": "Solar Radiation",
+    "solarRadiationUnit": "W/m²",
+    "solarRadiationTooltip": "Incoming solar radiation intensity. Higher values increase heat gain inside the greenhouse",
+    "designScenario": "Design Scenario",
+    "designScenarioOptions": {
+      "peak-summer": "Peak Summer (recommended)",
+      "custom-date": "Custom Conditions",
+      "worst-case": "Worst Case Manual"
+    },
+    "designScenarioTooltip": "Design for the worst conditions your system will face. Peak summer is recommended for MENA",
+    "crop": "Target Crop",
+    "cropOptions": {
+      "tomato": "Tomato",
+      "cucumber": "Cucumber",
+      "pepper": "Pepper / Capsicum",
+      "lettuce": "Lettuce & Leafy Greens",
+      "herbs": "Herbs (basil, mint, etc.)",
+      "custom": "Custom Temperature Target"
+    },
+    "cropTooltip": "Select your crop to evaluate whether the cooling system can maintain suitable growing temperatures",
+    "growthStage": "Growth Stage",
+    "growthStageOptions": {
+      "seedling": "Seedling",
+      "vegetative": "Vegetative",
+      "flowering": "Flowering",
+      "fruiting": "Fruiting"
+    },
+    "growthStageTooltip": "Some crops have tighter temperature tolerances during flowering and fruiting stages",
+    "customTargetTemp": "Target Temperature",
+    "customTargetTempUnit": "°C",
+    "customMaxTemp": "Maximum Stress Temperature",
+    "customMaxTempUnit": "°C"
+  },
+  "results": {
+    "title": "Your Results",
+    "preview": {
+      "title": "Estimated Indoor Temperature",
+      "coolEnd": "Cool end (pad side)",
+      "unlockFull": "Enter your details below to unlock the full engineering report"
+    },
+    "emailGate": {
+      "title": "Unlock Your Full Report",
+      "description": "Get your complete greenhouse cooling analysis — including equipment sizing, crop suitability assessment, and temperature gradient map.",
+      "name": "Your Name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email Address",
+      "emailPlaceholder": "you@example.com",
+      "company": "Company (optional)",
+      "companyPlaceholder": "Your company name",
+      "submit": "Get Full Report",
+      "privacy": "We respect your privacy. Your data is used only to deliver your report.",
+      "skip": "Skip for now"
+    },
+    "temperature": {
+      "title": "Temperature Analysis",
+      "coolEnd": "Cool End (Pad Side)",
+      "midPoint": "Mid-Point",
+      "hotEnd": "Hot End (Fan Side)",
+      "gradient": "Temperature Gradient Along Greenhouse",
+      "padSide": "Pad Side",
+      "fanSide": "Fan Side",
+      "wetBulb": "Wet Bulb Temperature",
+      "wetBulbDepression": "Wet Bulb Depression",
+      "tempDrop": "Temperature Drop Achieved",
+      "padEfficiency": "Pad Cooling Efficiency"
+    },
+    "crop": {
+      "title": "Crop Suitability",
+      "achievable": "Achievable — indoor temperature is within the optimal range for {{crop}}",
+      "marginal": "Marginal — indoor temperature is close to the stress threshold for {{crop}}. Consider additional cooling measures",
+      "notAchievable": "Not Achievable — indoor temperature exceeds the stress threshold for {{crop}}. System redesign recommended",
+      "optimalRange": "Optimal Range",
+      "stressThreshold": "Stress Threshold",
+      "yourTemp": "Your Mid-Point Temp"
+    },
+    "system": {
+      "title": "System Sizing",
+      "airflow": "Required Airflow",
+      "airflowPerHour": "per hour",
+      "padFaceArea": "Pad Face Area",
+      "padVelocity": "Pad Face Velocity",
+      "padVelocityOptimal": "Optimal (1.0–1.25 m/s)",
+      "padVelocityLow": "Below optimal — system may be oversized for pad area",
+      "padVelocityHigh": "Above optimal — risk of water carry-over. Increase pad area",
+      "fanCount": "Estimated Number of Fans",
+      "fanCapacity": "at {{capacity}} m³/hr each",
+      "indoorRH": "Estimated Indoor Humidity",
+      "floorArea": "Floor Area",
+      "volume": "Greenhouse Volume",
+      "airChanges": "Air Changes"
+    },
+    "actions": {
+      "downloadPDF": "Download PDF Report",
+      "shareLink": "Copy Shareable Link",
+      "linkCopied": "Link copied to clipboard!",
+      "startOver": "Start New Calculation",
+      "cta": "Talk to a Geneina Engineer",
+      "ctaDescription": "Get expert guidance on your greenhouse cooling system design"
+    },
+    "disclaimer": "These results are engineering estimates based on the Stull (2011) wet-bulb approximation and ASABE airflow standards. Actual performance may vary based on site-specific conditions, installation quality, and maintenance. A licensed professional should verify final design decisions."
+  },
+  "validation": {
+    "required": "This field is required",
+    "positiveNumber": "Must be a positive number",
+    "eaveExceedsRidge": "Eave height cannot exceed ridge height",
+    "canopyExceedsEave": "Canopy height cannot exceed eave height",
+    "padExceedsEave": "Pad height cannot exceed eave height",
+    "padThicknessRange": "Pad thickness must be between 1 and 30 cm",
+    "percentRange": "Must be between 0 and 100%",
+    "tempRange": "Temperature must be between -10°C and 60°C",
+    "rhRange": "Humidity must be between 1% and 100%",
+    "solarRange": "Solar radiation must be between 0 and 1400 W/m²",
+    "invalidEmail": "Please enter a valid email address"
+  },
+  "education": {
+    "title": "Understanding Pad & Fan Greenhouse Cooling",
+    "section1Title": "How Pad & Fan Evaporative Cooling Works",
+    "section1": "Pad and fan cooling is the most widely used active cooling method for greenhouses in hot, arid climates. The system draws outside air through wet cellulose pads installed on one wall of the greenhouse. As the air passes through the water-saturated pads, evaporation absorbs heat energy from the air, reducing its temperature. Large exhaust fans on the opposite wall create negative pressure that pulls this cooled air across the entire greenhouse length before exhausting it outside. The temperature of the air entering the greenhouse is determined by the evaporative cooling process — it can never go below the wet bulb temperature of the outside air, which is the theoretical cooling limit.",
+    "section2Title": "Why Wet Bulb Temperature is the True Cooling Limit",
+    "section2": "In the MENA region, summers bring extreme dry-bulb temperatures of 45–50°C, but relative humidity often drops to 5–15%. This combination creates a large wet bulb depression — the gap between dry bulb and wet bulb temperature — which is the true measure of evaporative cooling potential. For example, at 48°C and 10% relative humidity in Riyadh, the wet bulb temperature is approximately 22°C, giving a wet bulb depression of 26°C. With a high-efficiency 15cm pad (92% saturation effectiveness), the achievable temperature drop is about 24°C, bringing air entering the greenhouse down to roughly 24°C at the pad face. This is why pad and fan systems are particularly effective in the dry MENA climate — the low humidity is actually an advantage for evaporative cooling.",
+    "section3Title": "Common Sizing Mistakes in MENA Greenhouses",
+    "section3": "The most frequent mistake is undersizing the system based on average conditions rather than designing for peak summer. A system that works well in April will fail in July if not designed for worst-case conditions. Other common errors include: using 5cm pads in regions exceeding 42°C external temperature, making the airflow path too long without accounting for the temperature gradient (temperature rises along the greenhouse length as cooled air absorbs solar heat), ignoring the effect of cover material and shade on solar heat gain, and failing to maintain pads and water distribution systems — dry patches on pads dramatically reduce cooling efficiency.",
+    "section4Title": "When Pad & Fan Alone is Not Enough",
+    "section4": "Pad and fan cooling has physical limits. When outdoor humidity is high (above 60%), the wet bulb depression shrinks and evaporative cooling becomes ineffective. In coastal MENA locations, or during humid periods, additional strategies may be needed: fogging systems inside the greenhouse for supplemental cooling, shade screens (40–70% shade) to reduce solar heat gain before it enters the air stream, hybrid systems combining pad and fan with mechanical refrigeration for the most sensitive crops, and night ventilation strategies to pre-cool the greenhouse structure before the next day's heat peak. The calculator above helps you determine whether pad and fan alone will meet your crop's temperature requirements, or whether supplemental cooling is needed."
+  },
+  "footer": {
+    "disclaimer": "This tool provides engineering estimates only. Results should be verified by a qualified professional.",
+    "copyright": "© {{year}} Geneina Solutions. All rights reserved."
+  }
+}
