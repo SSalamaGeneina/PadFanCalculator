@@ -242,6 +242,10 @@
   },
   "footer": {
     "disclaimer": "This tool provides engineering estimates only. Results should be verified by a qualified professional.",
-    "copyright": "© {{year}} Geneina Solutions. All rights reserved."
+    "copyright": "© {{year}} Geneina International B.V. All rights reserved.",
+    "suiteTitle": "Geneina Greenhouse Science Suite",
+    "rtrCalc": "Root Temperature Calculator",
+    "psychroCalc": "Psychrometric Calculator",
+    "poweredBy": "Powered by Geneina International B.V."
   }
 }
